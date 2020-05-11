@@ -1,4 +1,4 @@
 [general]
 name=plugin1
 description=Just a test 
-code=plugin1.Plugin1
+code=plugin1.plugin1

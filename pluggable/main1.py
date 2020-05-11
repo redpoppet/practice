@@ -22,25 +22,26 @@ class Platform:
     def runPlugin(self,filename):
         pluginPath=os.path.join("plugins",filename)
         pluginInfo,plugin = self.getPlugin(pluginPath)
-        print("loading plugin:%s,description: %s " % (pluginInfo["name"],pluginInfo['description']) )
+        # print(pluginInfo)
+        print("loading plugin:%s, description: %s " % (pluginInfo["name"],pluginInfo['description']) )
         plugin.setPlatform(self)
         plugin.start()
 
     def getPlugin(self,pluginPath):
         pluginzip = zipfile.ZipFile(pluginPath,"r")
-        description_txt=pluginzip.open("description.txt")
+        description_txt=pluginzip.open("description.txt").read().decode('ascii')
         parser=configparser.ConfigParser()
-        print(description_txt)
-        parser.read("description.txt")
-        print(parser.sections())
+        parser.read_string(description_txt)
+
         pluginInfo={}
 
         pluginInfo["name"]=parser.get('general','name')
-        # pluginInfo["decription"]=parser.get("general","description")
-        # pluginInfo["code"]=parser.get("general","code")
-
+        pluginInfo["description"]=parser.get("general","description")
+        pluginInfo["code"]=parser.get("general","code")
+        print(pluginInfo)
         sys.path.append(pluginPath)
         moduleName,pluginClassName=pluginInfo["code"].rsplit(".",1)
+        print(moduleName,pluginClassName)
         module = __import__(moduleName,fromlist=[pluginClassName,])
         pluginClass=getattr(module,pluginClassName)
         plugin=pluginClass()
