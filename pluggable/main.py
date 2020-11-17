@@ -5,7 +5,7 @@ import zlibfile
 
 class Platform:
     def __init__(self):
-        self.plugins=[]
+        self.plugins =[]
         self.loadPlugins()
     
     def sayHello(self,from_):
@@ -17,7 +17,7 @@ class Platform:
                 continue
             self.runPlugin(filename)
 
-    def runPlugin(self,filename):
+    def runPlugin(self, filename):
         pluginName=os.path.splitext(filename)[0]
         plugin=importlib.import_module("plugins."+pluginName)
         clazz = plugin.getPluginClass()
