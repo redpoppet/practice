@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Nov 17 11:06:01 CST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0175-d42a-92a6-0000074bc888 
+on database directory /Users/poppet/workspace/practice/spark_practice/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@268bf657 
+Loaded from file:/usr/local/lib/python3.7/site-packages/pyspark-2.4.4-py3.7.egg/pyspark/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=/Users/poppet/workspace/practice/spark_practice
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.7
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
