@@ -1,0 +1,40 @@
+##### 模型中心(端口号17000)
+
+【产品开发】192.168.200.205
+【项目开发】192.168.200.208
+【产品测试】192.168.0.182
+【项目测试】192.168.0.189
+【项目生产环境】192.168.1.114
+
+##### 接口地址
+
+http://192.168.200.205:17000/api/md-master/v1/model-center/heartbeat
+
+http://192.168.200.208:17000/api/md-master/v1/model-center/heartbeat
+
+http://192.168.200.182:17000/api/md-master/v1/model-center/heartbeat
+
+http://192.168.200.189:17000/api/md-master/v1/model-center/heartbeat
+
+http://192.168.200.114:17000/api/md-master/v1/model-center/heartbeat
+
+
+##### 任务中心（端口号24000）
+
+【产品开发】192.168.200.206
+【项目开发】192.168.200.207
+【产品测试】192.168.0.81
+【项目测试】192.168.0.187
+【项目生产环境】192.168.1.9
+
+##### 接口地址
+
+http://192.168.200.206:24000/api/md-master/v1/export-center/heartbeat
+
+http://192.168.200.207:24000/api/md-master/v1/export-center/heartbeat
+
+http://192.168.0.81:24000/api/md-master/v1/export-center/heartbeat
+
+http://192.168.0.187:24000/api/md-master/v1/export-center/heartbeat
+
+http://192.168.1.9:24000/api/md-master/v1/export-center/heartbeat

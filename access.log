@@ -1,0 +1,4 @@
+[2021-10-21 16:33:47+0800 Factory.py:<module>:77:23333333333333 ERROR]->this is a test error
+[2021-10-21 16:37:40+0800 Factory.py:<module>:77:23333333333333 ERROR]->this is a test error
+[2021-10-21 16:38:53+0800 Factory.py:<module>:77:23333333333333 ERROR]->this is a test error
+[2021-10-21 16:38:53+0800 test.py:test:12:23333333333333 ERROR]->hello world
